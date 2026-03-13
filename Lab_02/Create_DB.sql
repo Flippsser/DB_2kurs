@@ -1,0 +1,1 @@
+CREATE DATABASE[BMA_MyBase];
