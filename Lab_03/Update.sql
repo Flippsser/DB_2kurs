@@ -1,0 +1,11 @@
+use BMA_MyBase_V2;
+select * from dbo.Товары;
+update dbo.Товары set цена = цена * 1.1 where кодтовара = 2;
+select * from dbo.Товары;
+update dbo.Товары set цена = цена / 1.1 where кодтовара = 2;
+select * from dbo.Товары;
+select * from dbo.Сделки;
+delete from dbo.Сделки where номерсделки = 3;
+select * from dbo.Сделки;
+insert into dbo.Сделки (номерсделки, датасделки, кодтовара, кодпокупателя, количество) values (3, '2026-03-11', 1, 3, 1);
+select * from dbo.Сделки;
